@@ -1,2 +1,5 @@
-<h1>Posts#form</h1>
-<p>Find me in app/views/posts/form.html.erb</p>
+<%= simple_form_for @post do |p| %>
+	<%= p.input :title %>
+	<%= p.input :body %>
+	<%= p.button :submit %>
+<% end %>
