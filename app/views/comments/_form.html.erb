@@ -1,0 +1,6 @@
+<%= simple_form_for [@post, @comment] do |c| %>
+	<%= c.input :author %>
+	<%= c.input :comment_body %>
+	
+	<%= c.button :submit %>
+<% end %>
